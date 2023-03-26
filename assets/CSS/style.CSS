@@ -233,7 +233,7 @@ article, section {
     h3 {
         margin-top: 1rem;
     }
-    .right {
+    #cnt ul {
         display: flex;
         flex-direction: column;
     }
