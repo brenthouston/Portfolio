@@ -140,9 +140,8 @@ article, section {
     border-left: 2px solid #ACADA5;
     display:flex;
     flex-wrap: wrap;
-    margin: 1%;
     padding: 2% 5%;
-    width: 90%
+    width: 90%;
 } 
 
 .bio {
@@ -179,7 +178,7 @@ article, section {
 }
 
 .card header{
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(141, 85, 245, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
@@ -235,5 +234,9 @@ div header:hover {
     #cnt ul {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
+    }
+    .card .card header {
+        min-width: 337.5px;
     }
 }
