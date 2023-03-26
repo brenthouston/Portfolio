@@ -32,7 +32,7 @@ a:visited {
     color: var(--text);
 }
 
- ul > li:hover {
+ .navbar > li:hover {
     filter:blur(4px);
     box-shadow: 0 10px 50px 5px #47469B; 
     background: #47469B;
@@ -199,8 +199,8 @@ article, section {
     
     } 
 
-    div header:hover {
-        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
+div header:hover {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
         
     }
     
