@@ -32,29 +32,17 @@ a:visited {
     color: var(--text);
 }
 
- .navbar > li:hover {
-    filter:blur(4px);
-    box-shadow: 0 10px 50px 5px #47469B; 
-    background: #47469B;
-    text-decoration: none;
-    color: #FCF8DD; 
-    transition: all 2s ease-out;
-} 
+.card a:hover {
+    transform: scale(101%);
+    box-shadow: 0px 0px 30px -5px #7775f4;
+    
+    } 
 
-.cardflag,
-h4 {
-    margin-left: 10px;
-    color: #0d1007;
-    font-size: 25px;
-}
-
-.cardflag {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-
-
+div header:hover {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
+        
+    }
+    
 h4 {
     margin-top: 5px;
 }
@@ -68,6 +56,8 @@ main {
     background-color: var(--primary);
     height: 100%;
 }
+
+
 
 Header {
     display: flex;
@@ -117,8 +107,31 @@ p {
     color: var(--text);
 }
 
+.cardflag,
+h4 {
+    margin-left: 10px;
+    color: #0d1007;
+    font-size: 25px;
+}
+
+.cardflag {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
 
 
+.navbar > li:hover {
+    filter:blur(4px);
+    box-shadow: 0 10px 50px 5px #47469B; 
+    background: #47469B;
+    text-decoration: none;
+    color: #FCF8DD; 
+    transition: all 2s ease-out;
+} 
 
 .flex-container {
     margin-top: 2rem;
@@ -181,7 +194,6 @@ p {
 }
 
 .card header{
-    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(141, 85, 245, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
@@ -194,19 +206,6 @@ p {
 .card header {
     border: 1px solid cyan;
 }
-
-.card a:hover {
-    transform: scale(101%);
-    box-shadow: 0px 0px 30px -5px #7775f4;
-    
-    } 
-
-div header:hover {
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
-        
-    }
-    
-
 
 @media screen and (max-width:768px){
     .flex-container{
