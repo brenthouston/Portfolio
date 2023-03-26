@@ -139,9 +139,9 @@ h4 {
     flex-direction: row;
 }
 
-#thumbnail {
+#thumbnail header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .left {
@@ -221,10 +221,7 @@ h4 {
     p {
         text-align: center;
     }
-    header {
-        
-        flex-direction: column;
-    }
+    
     li {
         margin-top: 1rem;
     }
@@ -241,7 +238,5 @@ h4 {
         flex-direction: column;
         justify-content: flex-end;
     }
-    .card .card header {
-        min-width: 337.5px;
-    }
+   
 }
