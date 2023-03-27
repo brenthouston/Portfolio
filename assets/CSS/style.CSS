@@ -32,6 +32,7 @@ a:visited {
     color: var(--text);
 }
 
+
 .card a:hover {
     transform: scale(101%);
     box-shadow: 0px 0px 30px -5px #7775f4;
@@ -40,12 +41,8 @@ a:visited {
 
 div header:hover {
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
-        
-    }
-    
-h4 {
-    margin-top: 5px;
 }
+    
 
 body{
     background-color: var(--primary);
@@ -57,13 +54,10 @@ main {
     height: 100%;
 }
 
-
-
 Header {
     display: flex;
     background: var(--primary);
     min-height: 10vh;
-    
 }
 
 header, ul{
@@ -101,27 +95,27 @@ H1 {
     
 }
 
+
 H1,
 h3,
 p {
     color: var(--text);
 }
 
-.cardflag,
+ .cardflag,
 h4 {
-    margin-left: 10px;
+    line-height: 20px;
+    height: 20px;
+    margin: 0px;
     color: #0d1007;
     font-size: 25px;
 }
 
 .cardflag {
-    display: flex;
-    justify-content: baseline;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 14px;
+    color: black;
 }
+
 
 
 .navbar > li:hover {
@@ -139,26 +133,13 @@ h4 {
     flex-direction: row;
 }
 
-#thumbnail header {
-    display: flex;
-    justify-content: center;
-}
-
 .left {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 230px;
+    min-width: 20%;
     
 }
-
-.right {
-    border-left: 2px solid #ACADA5;
-    display:flex;
-    flex-wrap: wrap;
-    padding: 2% 5%;
-    width: 90%;
-} 
 
 .bio {
     font-family: "brother-1816-printed", sans-serif;
@@ -167,6 +148,31 @@ h4 {
     line-height: 20px;
     
 }
+
+.right {
+    border-left: 2px solid #ACADA5;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+    width: 90%;
+} 
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 500px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 600px;
+}
+
 
 #port{
     height: 100px;
@@ -182,9 +188,10 @@ h4 {
     align-items: end;
     height: 200px;
     width: 400px;
-    margin: 0 0 8rem 0; 
+    margin: 0px 0px 8rem;
     transition: all .5s ease; 
 }
+
 #cnt {
     font-family: "brother-1816-printed", sans-serif;
     font-weight: 500;
@@ -194,27 +201,39 @@ h4 {
 }
 
 .card header{
-    justify-content: center;
-    align-items: flex-start;
+    display: flex;
+    line-height: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 35px;
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(141, 85, 245, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     width: 400px;
-    max-height: 20px;
     clip-path: polygon(28% 0, 31% 50%, 28% 100%, 0% 100%, 0 53%, 0% 0%);
     transition: all 1s ease;
+    border: 1px solid rgb(29, 211, 211);
+    border-radius: 10px 0 0 0;
 }
 
-.card header {
-    border: 1px solid cyan;
-}
 
 @media screen and (max-width:768px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .flex-container{
         align-items: center;
         flex-direction: column;
-        ;}
-    
-    figure {
+       }
 
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    figure {
         justify-content: center;
         height: 80px;
     }
