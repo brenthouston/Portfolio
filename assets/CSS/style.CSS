@@ -1,10 +1,8 @@
 /* COLOR PALLET
-#47469B ---PURPLE
-#3F4F70 ---DARK
-#ACADA5 ---light grey
-#a8aaa0 ---lighter grey
-#EFE6CC ----PEACH
-#FCF8DD  ----Yellow*/
+    --primary: #2b364f;
+    --text: #ACADA5;
+    --accent1: #3F4F70;
+    --accent2: #47469B; */
 
 :root {
     --primary: #2b364f;
